@@ -2,6 +2,10 @@
 
 **Django-Python Project**
 
+>[!note]
+>I have Forked this repository to host this as a website....
+
+
 ## Features
 
 - [x] Project initialized
