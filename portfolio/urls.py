@@ -20,4 +20,10 @@ from django.urls import path
 
 urlpatterns = [
     path("admin/", admin.site.urls),
+    path('', views.homepg),
+    path('menu/',views.menu),
+    path('about/',views.about),
+    path('contact/',views.contact),
+    path('projects/',views.projects),
+    path('info',views.inf),
 ]
