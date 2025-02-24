@@ -4,4 +4,9 @@ services:
     env: python
     buildCommand: pip install -r requirements.txt && python manage.py collectstatic --noinput
     startCommand: gunicorn portfolio.wsgi:application
-    publish: staticfiles
+    publish:
+      - path: /static
+        destination: staticfiles
+    envVars:
+      - key: DJANGO_ALLOWED_HOSTS
+        value: 'https://portfolio-c1es1.onrender.com'
