@@ -32,4 +32,4 @@ urlpatterns = [
     path('contact/',views.contact),
     path('projects/',views.projects),
     path('info',views.inf),
-]
+]  + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
