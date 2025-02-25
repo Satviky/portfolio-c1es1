@@ -10,3 +10,5 @@ services:
     envVars:
       - key: DJANGO_ALLOWED_HOSTS
         value: 'https://portfolio-c1es1.onrender.com'
+      - key: DJANGO_SETTINGS_MODULE
+        value: 'portfolio.settings'
